@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="stylos.css"/>
+
+	<title> Gerenciador de operacoes</title>
+	
+</head>
+
+<body>
+
+<h1> Cadastro de operaciones <br> $Muito Dinheiro$ </h1>
+	<hr><ul class="menu">
+		<li><a href=# style="text-decoration:none">Registro</a></li>
+		<li><a href="Listadeoperaçoes.html" style="text-decoration:none">Lista de operaçoes</a></li>
+		<li><a href="valortotaldasoperaçoes.html" style="text-decoration:none">Varlor de operaçoes</a></li>
+		<li><a href="valortotaldastaxas.html" style="text-decoration:none">Valor de taxas cobradas</a></li>
+	</ul><hr>
+<br>
+
+<form name="formulario" id="form" method="post" action="">
+
+	<label for="nome do cliente">Nome do cliente</label>
+	<input type="text" name="nome" id="nome" placeholder="Ingrese o nome do cliente"><br/>
+
+	<label for="Data da operacao">Data da operaçao</label>
+	<input type="text" name="Data" id="data" placeholder="Ingrese a data de hoje"> <br/>
+
+<table>
+	<tr>
+	<td><label for="valor original">valor original</label>
+	<textarea type="num" name="valor" id="campo" placeholder="Ingrese o valor" ondblclick="establecerMoeda()"></textarea></td>
+	<td><select class="valor" name="MoedaOrigen" id="MoedaOrigen">
+	<option value="">Selecciona uma moeda</option>
+	<option value="USD">USD Dolares estado unidense</option>
+	<option value="EUR">EUR Euro</option>
+	</select> </td> </tr>
+
+	<tr> <td><label for="valor convertido">valor convertido</label>
+	<p type="num" name="valorC" id="campo2" placeholder="valor convertido">texto </p></td>
+
+
+	<td><select type="text" name="MoedaDestino" id="MoedaDestino">
+	<option value="">BRL</option>
+	</select>  </tr> </table>
+
+	<label for="Taxa cobrada">Taxa cobrada</label>
+	<textarea type="num" name="Taxa" id="taxa" style="resize: none" disabled></textarea><br/>
+
+	
+</form>
+
+<script type="text/javascript" src="registro.js"></script>
+</html>
